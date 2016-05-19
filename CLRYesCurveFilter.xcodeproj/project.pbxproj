@@ -15,6 +15,11 @@
 		543DDBA81CECC7D1009DA934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543DDBA61CECC7D1009DA934 /* LaunchScreen.storyboard */; };
 		543DDBB31CECC7D2009DA934 /* CLRYesCurveFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 543DDBB21CECC7D2009DA934 /* CLRYesCurveFilterTests.m */; };
 		543DDBBE1CECC7D2009DA934 /* CLRYesCurveFilterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 543DDBBD1CECC7D2009DA934 /* CLRYesCurveFilterUITests.m */; };
+		543DDBF81CECCAF2009DA934 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 543DDBF71CECCAF2009DA934 /* libGPUImage.a */; };
+		543DDBFB1CECCC33009DA934 /* curves3.acv in Resources */ = {isa = PBXBuildFile; fileRef = 543DDBFA1CECCC33009DA934 /* curves3.acv */; };
+		543DDBFD1CECCD44009DA934 /* yes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 543DDBFC1CECCD44009DA934 /* yes.jpg */; };
+		543DDBFF1CECD2C9009DA934 /* curves2.acv in Resources */ = {isa = PBXBuildFile; fileRef = 543DDBFE1CECD2C9009DA934 /* curves2.acv */; };
+		543DDC031CECD69D009DA934 /* curves1.acv in Resources */ = {isa = PBXBuildFile; fileRef = 543DDC021CECD69D009DA934 /* curves1.acv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		543DDBB91CECC7D2009DA934 /* CLRYesCurveFilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLRYesCurveFilterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		543DDBBD1CECC7D2009DA934 /* CLRYesCurveFilterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLRYesCurveFilterUITests.m; sourceTree = "<group>"; };
 		543DDBBF1CECC7D2009DA934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543DDBF71CECCAF2009DA934 /* libGPUImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGPUImage.a; sourceTree = "<group>"; };
+		543DDBFA1CECCC33009DA934 /* curves3.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = curves3.acv; sourceTree = "<group>"; };
+		543DDBFC1CECCD44009DA934 /* yes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yes.jpg; sourceTree = "<group>"; };
+		543DDBFE1CECD2C9009DA934 /* curves2.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = curves2.acv; sourceTree = "<group>"; };
+		543DDC021CECD69D009DA934 /* curves1.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = curves1.acv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543DDBF81CECCAF2009DA934 /* libGPUImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +112,7 @@
 		543DDB971CECC7D1009DA934 /* CLRYesCurveFilter */ = {
 			isa = PBXGroup;
 			children = (
+				543DDBF91CECCC26009DA934 /* rec */,
 				543DDB9B1CECC7D1009DA934 /* AppDelegate.h */,
 				543DDB9C1CECC7D1009DA934 /* AppDelegate.m */,
 				543DDB9E1CECC7D1009DA934 /* ViewController.h */,
@@ -109,6 +121,7 @@
 				543DDBA41CECC7D1009DA934 /* Assets.xcassets */,
 				543DDBA61CECC7D1009DA934 /* LaunchScreen.storyboard */,
 				543DDBA91CECC7D1009DA934 /* Info.plist */,
+				543DDBF71CECCAF2009DA934 /* libGPUImage.a */,
 				543DDB981CECC7D1009DA934 /* Supporting Files */,
 			);
 			path = CLRYesCurveFilter;
@@ -138,6 +151,17 @@
 				543DDBBF1CECC7D2009DA934 /* Info.plist */,
 			);
 			path = CLRYesCurveFilterUITests;
+			sourceTree = "<group>";
+		};
+		543DDBF91CECCC26009DA934 /* rec */ = {
+			isa = PBXGroup;
+			children = (
+				543DDBFA1CECCC33009DA934 /* curves3.acv */,
+				543DDBFE1CECD2C9009DA934 /* curves2.acv */,
+				543DDC021CECD69D009DA934 /* curves1.acv */,
+				543DDBFC1CECCD44009DA934 /* yes.jpg */,
+			);
+			name = rec;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +231,7 @@
 				TargetAttributes = {
 					543DDB941CECC7D1009DA934 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CEFB2D4X4X;
 					};
 					543DDBAD1CECC7D2009DA934 = {
 						CreatedOnToolsVersion = 7.2;
@@ -243,9 +268,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543DDBFD1CECCD44009DA934 /* yes.jpg in Resources */,
 				543DDBA81CECC7D1009DA934 /* LaunchScreen.storyboard in Resources */,
+				543DDC031CECD69D009DA934 /* curves1.acv in Resources */,
 				543DDBA51CECC7D1009DA934 /* Assets.xcassets in Resources */,
+				543DDBFB1CECCC33009DA934 /* curves3.acv in Resources */,
 				543DDBA31CECC7D1009DA934 /* Main.storyboard in Resources */,
+				543DDBFF1CECD2C9009DA934 /* curves2.acv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +440,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLRYesCurveFilter",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Users/vk/workspace/GPUImage/framework/Source,
+					/Users/vk/workspace/GPUImage/framework/Source/iOS,
+				);
 				INFOPLIST_FILE = CLRYesCurveFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLRYesCurveFilter",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = clover.CLRYesCurveFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,8 +465,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLRYesCurveFilter",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Users/vk/workspace/GPUImage/framework/Source,
+					/Users/vk/workspace/GPUImage/framework/Source/iOS,
+				);
 				INFOPLIST_FILE = CLRYesCurveFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLRYesCurveFilter",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = clover.CLRYesCurveFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,6 +553,7 @@
 				543DDBC41CECC7D2009DA934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		543DDBC51CECC7D2009DA934 /* Build configuration list for PBXNativeTarget "CLRYesCurveFilterTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +562,7 @@
 				543DDBC71CECC7D2009DA934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		543DDBC81CECC7D2009DA934 /* Build configuration list for PBXNativeTarget "CLRYesCurveFilterUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +571,7 @@
 				543DDBCA1CECC7D2009DA934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
